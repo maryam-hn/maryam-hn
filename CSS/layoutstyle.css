@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400);
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+	
+}
+section {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	
+
+}
+section::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 100%;
+	height: 90%;
+
+}
+
+h6 {
+	font-family: 'Josefin Sans';
+	font-size: 22px;
+	margin:22px;
+	color:#c4409f;
+}
+
+
+.flex-container{
+	margin:126px 33px;
+	display: inline-flex;
+}
+
+.flex-item:nth-child(-n+1) {
+	order: 0;
+	flex: 2 1 auto;
+	align-self: flex-end;
+}
+
+section p{
+	text-align:center;
+	margin: 34px 0px;
+	width: 100%;
+	   font-family: 'Josefin Sans';
+	
+}
+
+.flex-item {
+  background: linear-gradient(to bottom, rgba(169, 218, 215, 1), rgba(251, 137, 201, 1)); /*Standard*/
+	border-radius:55px;
+	padding:10px;
+	border: purple;
+	margin:62px 22px;
+
+}
+
+/*             middle image            */
+.flex-item2 img{
+	border-radius:12px;
+	background-color: white;
+
+}
+
+aside {
+	
+	color:black;
+	text-align:center;
+	padding: 10px;
+	margin: 20px;
+	position:absolute;
+}
+
+footer {
+	background-color:#566573;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	bottom:0px;
+	width: 100%;
+}
+
+
+
+
+
+/*--about me header"Aspiring Web and Mobile..*/
+section h2 {
+	 font-family: 'Josefin Sans';
+	 color:pink;
+
+}
+
+	
+	/* ----------landing page text:"Maryam Hassan"*/
+section h1 {
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	font : normal 300 64px/1 'Josefin Sans', sans-serif;
+	text-align: center;
+	white-space: nowrap;
+}
+
+/*first page/landing page background image*/
+#section01 { background: url(http://i1379.photobucket.com/albums/ah142/RadCatt/20160605_234402_zpsczbzlazx.jpg) center center / cover no-repeat;}
+
+/*second page*/
+#section02 { background: url(http://i1379.photobucket.com/albums/ah142/RadCatt/pinkline_zps4bejzxhd.jpg)
+ center center / cover no-repeat;}
+
+
+/*third page*/
+#section03 { background: url(http://i1379.photobucket.com/albums/ah142/RadCatt/pinkline_zps4bejzxhd.jpg)
+ center center / cover no-repeat;}
+/*fourth page */
+
+
+
+
+/* -----------------section 1 (landing page) scroll arrow symbol------------*/
+#section01 a {
+	padding-top: 50px;
+}
+
+
+/*-----------SECTION 2------------*/
+#section02 a {
+	padding-top: 40px;
+}
+
+/* -------------------SECTION 3----------------*/
+#section03 a {
+	padding-top: 40px;
+}
+
+
+
+h4 {
+	color:Purple;
+	letter-spacing:1px;
+	font-size:1.5em;
+	text-align:center;
+	margin:104px 180px;
+	font-family: 'Josefin Sans';
+	position:absolute;
+
+}
+
+
+/*=================> CONTACT ME FORM<===================*/
+
+/* -----------size of the input boxes*/
+input, textarea {
+	width:439px;
+	height:27px;
+	background:#efefef;
+	border-radius:5px;
+	border:1px solid #dedede;
+	
+}
+/*-------border appears once clicked on input box*/
+input:focus, textarea:focus {
+		border:1px solid #97d6eb;
+}
+
+textarea{
+	height:149px;
+}
+
+.container{
+  position: absolute;
+  width: 100%;
+	padding: 1em;
+	margin: 0 305px;
+}
+
+/* ------CONTACT ME HEADER----*/
+.container h2{
+	margin: 44px -232px;
+	font-size: 32px;
+	text-transform: uppercase;
+	color:Purple;
+}
+
+#contact input[type="text"],#contact input[type="email"], #contact textarea{
+	display: block;
+	padding: 10px;
+	margin: 10px ;
+	width: 100%;
+	font-size: 18px;
+}
+
+
+#contact input:hover, #contact textarea:hover, #contact send-buttom:hover{
+	border: 3px solid pink;
+}
+
+
+#contact .send-button button[type="submit"]{
+	color: #fff;
+    background: pink;
+    border: black;
+	width: 100%;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: .5s all ease;
+    cursor: pointer;
+	text-align: center;
+	
+}
+
+#contact .send-button button[type="submit"]:hover{
+	background: pink;
+}
+
+#contact .send-button button[type="submit"]:focus{
+	position: relative;
+	top: 2px;
+}
+
+
+            /*  Responsive*/
+
+
+@media screen and (min-width: 640px){
+	.container{
+		width: 600px;
+	}
+  
+  #contact textarea{
+    max-width: 98%;
+    width: 86%;
+    min-height: 12px;
+    margin-right: 0;
+  }
+
+	#contact .right,#contact .left{
+		display: block;
+	}
+
+	#contact .right{
+		float: right;
+		width: 50%;
+	}
+  
+	#contact .left{
+		float: left;
+		width: 44%;
+	}
+	.cl{
+    clear: both;
+  }
+
+
+/*-------------COPYRIGHTED INFO-----------*/
+
+footer {
+	font-family: 'Josefin Sans';
+	text-align:center;
+	margin:0px;
+	background: pink;
+	border-radius:22px;
+}

@@ -1,0 +1,225 @@
+
+
+/*font colour of every text*/
+a {
+  color: #FF6699;
+}
+
+.navbar-right{
+position: fixed;
+float:right;
+right: 0px;
+}
+
+
+header {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+/*background color of links eg home, about etc */
+.header ul {
+  margin: auto;
+  padding: 3px;
+  list-style: none;
+  overflow: hidden;
+   font-family: 'Josefin Sans';
+   font-size:24px;
+}
+
+/*border for nav links*/
+.header li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+}
+
+
+/* NAV BAR-hover colors background gradient- pink and turquoise*/
+.header li a:hover,
+.header .menu-btn:hover {
+  color: #c74438;
+  border-radius: 66px;
+  width:12%;
+  background: linear-gradient(145deg, rgba(255,102,255,0.9) 0%,rgba(51,204,153,0.65) 60%);
+}
+
+.responsive-image {
+  height: 34px;
+  width: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* logo/name */
+.header .logo {
+  font-family: 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif;
+ font-style: italic;
+  display: block;
+  font-size: 3em;
+  line-height: 102%;
+  padding: 10px 1150px;
+  text-decoration: none;
+  color:#00CCCC;
+  position: fixed;
+}
+
+/* nav menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .4s ease-out;
+   position: fixed;
+}
+
+
+/*hamburger icon -RESPONSIVE NAV*/
+/*THIS IS THE ONE*/
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+  padding: 0px;
+  margin: 13px;
+  position: fixed;
+  user-select: none;
+}
+
+/*size of burger */
+
+.header .menu-icon .navicon {
+  background: #FF6699;
+  display: block;
+  height: 6px;
+  position: relative;
+  transition: background .6s ease-out;
+  width: 35px;
+}
+
+/*burger transition */
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .7s ease-out;
+  width: 100%;
+  background:#FF6699;
+}
+
+/*lines of space between burger*/
+.header .menu-icon .navicon:before {
+  top: 8px;
+}
+.header .menu-icon .navicon:after {
+  top: -8px;
+}
+
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+/* opened drop down menu*/
+.header .menu-btn:checked ~ .menu {
+  max-height:440px;
+	
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+ 
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+
+/* turns hamburger to cross when clicked on */
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 258px;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 25px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .section-split a {
+    width: 30%;
+  }
+
+
+h3 {
+font-size: 22px;
+margin: 95px 555px;
+line-height:22px;
+}
+
+h2 {
+	font-size: 52px;
+	font-family: 'Josefin Sans';
+	position:absolute;
+margin: 25px 495px;
+
+	
+}
+
+/* --------------PORTFOLIO-SVG------->*/
+
+
+
+.flex-item2 a {
+	margin:44px -53px;
+	position: absolute;
+}
+
+.flex-item3{ 
+	margin: 135px -422px;
+	position: absolute;
+	
+}
+
+/*social media icons */
+
+.linked-button{
+	margin:0 -120px;
+}
+.git-button {
+	margin: 0 45px
+}
+
+
+
